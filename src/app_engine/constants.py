@@ -39,15 +39,13 @@ ICE_SERVER_OVERRIDE  = [
 ]
 
 ICE_SERVER_BASE_URL = 'http://rtc.intopi.com'
-ICE_SERVER_URL_TEMPLATE = ''
-ICE_SERVER_API_KEY = os.environ.get('')
-# ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
-# ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
+ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
+ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
 
 # Dictionary keys in the collider instance info constant.
-WSS_INSTANCE_HOST_KEY = 'localhost:3478'
-WSS_INSTANCE_NAME_KEY = 'vm_name'
-WSS_INSTANCE_ZONE_KEY = 'zone'
+# WSS_INSTANCE_HOST_KEY = 'localhost:3478'
+# WSS_INSTANCE_NAME_KEY = 'vm_name'
+# WSS_INSTANCE_ZONE_KEY = 'zone'
 # WSS_INSTANCES = [{
 #     WSS_INSTANCE_HOST_KEY: 'localhost:8080'
 #     WSS_INSTANCE_NAME_KEY: 'wsserver-std',
