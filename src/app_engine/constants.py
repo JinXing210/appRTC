@@ -43,7 +43,7 @@ ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
 ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
 
 # Dictionary keys in the collider instance info constant.
-# WSS_INSTANCE_HOST_KEY = 'localhost:3478'
+WSS_INSTANCE_HOST_KEY = 'localhost:3478'
 # WSS_INSTANCE_NAME_KEY = 'vm_name'
 # WSS_INSTANCE_ZONE_KEY = 'zone'
 # WSS_INSTANCES = [{
@@ -59,7 +59,7 @@ ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
 # WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
 
 # # memcache key for the active collider host.
-# WSS_HOST_ACTIVE_HOST_KEY = 'wss_host_active_host'
+WSS_HOST_ACTIVE_HOST_KEY = 'localhost:3478'
 
 # # Dictionary keys in the collider probing result.
 # WSS_HOST_IS_UP_KEY = 'is_up'
