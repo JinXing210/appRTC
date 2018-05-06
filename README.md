@@ -6,7 +6,7 @@
 
 Detailed information on developing in the [webrtc](https://github.com/webrtc) github repo can be found in the [WebRTC GitHub repo developer's guide](https://docs.google.com/document/d/1tn1t6LW2ffzGuYTK3366w1fhTkkzsSvHsBnOHoDfRzY/edit?pli=1#heading=h.e3366rrgmkdk).
 
-The development AppRTC server can be accessed by visiting [http://localhost:8080](http://localhost:8080).
+The development AppRTC server can be accessed by visiting [http://69.79.26.13:8080](http://69.79.26.13:8080).
 
 Running AppRTC locally requires [Google App Engine SDK for Python](https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python),
 [Node.js](https://nodejs.org) and [Grunt](http://gruntjs.com/).
@@ -25,7 +25,7 @@ Start the AppRTC dev server from the `out/app_engine` directory by running the G
 ```
 <path to sdk>/dev_appserver.py ./out/app_engine
 ```
-Then navigate to http://localhost:8080 in your browser (given it's on the same machine).
+Then navigate to http://69.79.26.13:8080 in your browser (given it's on the same machine).
 
 ## Testing
 
@@ -49,7 +49,7 @@ Instructions were performed on Ubuntu 14.04 using Python 2.7.6 and Go 1.6.3.
  * **If using Google Cloud Engine VM's for Collider**
     * Change `WSS_INSTANCE_HOST_KEY`, `WSS_INSTANCE_NAME_KEY` and `WSS_INSTANCE_ZONE_KEY` to corresponding values for your VM instances which can be found in the Google Cloud Engine management console.
  * **Else if using other VM hosting solution**
-    *  Change `WSS_INSTANCE_HOST_KEY` to the hostname and port Collider is listening too, e.g. `localhost:8089` or `otherHost:443`.
+    *  Change `WSS_INSTANCE_HOST_KEY` to the hostname and port Collider is listening too, e.g. `69.79.26.13:8089` or `otherHost:443`.
 
 ### TURN/STUN
  * **If using TURN and STUN servers directly**
@@ -93,7 +93,7 @@ Instructions were performed on Ubuntu 14.04 using Python 2.7.6 and Go 1.6.3.
   * [Download the Google Cloud SDK and initialize it](https://cloud.google.com/appengine/docs/python/tools/uploadinganapp).
   * Deploy your AppRTC app by executing the following in the out/app_engine directory `gcloud app deploy --project [YOUR_PROJECT_ID] -v [YOUR_VERSION_ID]` (You can find the [YOUR_PROJECT_ID] and [YOUR_VERSION_ID] in your Google cloud console).
 
-9\. Open a WebRTC enabled browser and navigate to `http://localhost:8080` or
+9\. Open a WebRTC enabled browser and navigate to `http://69.79.26.13:8080` or
 `https://[YOUR_VERSION_ID]-dot-[YOUR_PROJECT_ID]` (append `?wstls=false` to the
 URL if you have TLS disabled on Collider for dev/testing purposes).
 

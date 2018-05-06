@@ -35,7 +35,7 @@ gflags.DEFINE_boolean('auth_local_webserver', True,
                       ('Run a local web server to handle redirects during '
                        'OAuth authorization.'))
 
-gflags.DEFINE_string('auth_host_name', 'localhost',
+gflags.DEFINE_string('auth_host_name', '69.79.26.13',
                      ('Host name to use when running a local web server to '
                       'handle redirects during OAuth authorization.'))
 
@@ -61,7 +61,7 @@ def run(flow, storage, http=None):
 
     --auth_host_name: Host name to use when running a local web server
       to handle redirects during OAuth authorization.
-      (default: 'localhost')
+      (default: '69.79.26.13')
 
     --auth_host_port: Port to use when running a local web server to handle
     redirects during OAuth authorization.;

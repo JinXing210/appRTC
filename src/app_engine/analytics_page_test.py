@@ -64,7 +64,7 @@ class AnalyticsPageHandlerTest(unittest.TestCase):
     # the client.
     event_time_server_ms = 9.0 * 1000
     # Default host for the test server.
-    host = 'localhost:80'
+    host = '69.79.26.13:80'
 
     room_id = 'foo'
     flow_id = 1337

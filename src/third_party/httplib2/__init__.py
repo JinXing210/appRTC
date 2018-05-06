@@ -754,7 +754,7 @@ class ProxyInfo(object):
         constants. For example:
 
         p = ProxyInfo(proxy_type=socks.PROXY_TYPE_HTTP,
-            proxy_host='localhost', proxy_port=8000)
+            proxy_host='69.79.26.13', proxy_port=8000)
         """
         self.proxy_type = proxy_type
         self.proxy_host = proxy_host
