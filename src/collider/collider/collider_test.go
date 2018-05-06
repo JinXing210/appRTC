@@ -27,7 +27,7 @@ var cl *Collider
 var port = flag.Int("port", 8089, "The port that Collider listens to")
 
 func startCollider() {
-	serverAddr = "69.79.26.13:" + strconv.Itoa(*port)
+	serverAddr = "localhost:" + strconv.Itoa(*port)
 
 	cl = &Collider{
 		roomTable: newRoomTable(registerTimeout, "http://"+serverAddr),
@@ -40,7 +40,7 @@ func startCollider() {
 
 func newConfig(t *testing.T, path string) *websocket.Config {
 	wsaddr := fmt.Sprintf("ws://%s%s", serverAddr, path)
-	lh := "http://69.79.26.13"
+	lh := "http://localhost"
 	c, err := websocket.NewConfig(wsaddr, lh)
 	if err != nil {
 		t.Fatalf("NewConfig(%q, %q) got error: %s, want nil", wsaddr, lh, err.Error())

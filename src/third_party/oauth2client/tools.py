@@ -56,7 +56,7 @@ with information from the APIs Console <https://code.google.com/apis/console>.
 # by tools.run(). Pass it in as part of the 'parents' argument to your own
 # ArgumentParser.
 argparser = argparse.ArgumentParser(add_help=False)
-argparser.add_argument('--auth_host_name', default='69.79.26.13',
+argparser.add_argument('--auth_host_name', default='localhost',
                         help='Hostname when running a local web server.')
 argparser.add_argument('--noauth_local_webserver', action='store_true',
                         default=False, help='Do not run a local web server.')
@@ -69,7 +69,7 @@ argparser.add_argument('--logging_level', default='ERROR',
 
 
 class ClientRedirectServer(BaseHTTPServer.HTTPServer):
-  """A server to handle OAuth 2.0 redirects back to 69.79.26.13.
+  """A server to handle OAuth 2.0 redirects back to localhost.
 
   Waits for a single request and parses the query parameters
   into query_params and then stops serving.
@@ -78,7 +78,7 @@ class ClientRedirectServer(BaseHTTPServer.HTTPServer):
 
 
 class ClientRedirectHandler(BaseHTTPServer.BaseHTTPRequestHandler):
-  """A handler for OAuth 2.0 redirects back to 69.79.26.13.
+  """A handler for OAuth 2.0 redirects back to localhost.
 
   Waits for a single request and parses the query parameters
   into the servers query_params and then stops serving.
@@ -123,7 +123,7 @@ def run_flow(flow, storage, flags, http=None):
 
     --auth_host_name: Host name to use when running a local web server
       to handle redirects during OAuth authorization.
-      (default: '69.79.26.13')
+      (default: 'localhost')
 
     --auth_host_port: Port to use when running a local web server to handle
       redirects during OAuth authorization.;
