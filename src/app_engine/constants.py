@@ -56,7 +56,7 @@ ICE_SERVER_OVERRIDE  = [
 #     WSS_INSTANCE_NAME_KEY: 'wsserver-std-2',
 #     WSS_INSTANCE_ZONE_KEY: 'us-central1-f'
 # }
-]
+# ]
 
 # WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
 
