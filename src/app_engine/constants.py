@@ -25,29 +25,29 @@ LOOPBACK_CLIENT_ID = 'LOOPBACK_CLIENT_ID'
 ICE_SERVER_OVERRIDE  = [
   {
     "urls": [
-      "turn:hostname/localhost:3478?transport=udp",
-      "turn:hostname/localhost:3478?transport=tcp"
+      "turn:hostname/rtc.intopi.com:3478?transport=udp",
+      "turn:hostname/rtc.intopi.com:3478?transport=tcp"
     ],
     "username": "webrtc",
     "credential": "@yb254f67u!"
   },
   {
     "urls": [
-      "stun:hostname/localhost:3478"
+      "stun:hostname/rtc.intopi.com:3478"
     ]
   }
 ]
 
-ICE_SERVER_BASE_URL = 'http://rtc.intopi.com'
-ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
-ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
+# ICE_SERVER_BASE_URL = 'http://rtc.intopi.com'
+# ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
+# ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
 
 # Dictionary keys in the collider instance info constant.
-WSS_INSTANCE_HOST_KEY = 'localhost:3478'
+WSS_INSTANCE_HOST_KEY = 'rtc.intopi.com:3478'
 WSS_INSTANCE_NAME_KEY = 'vm_name'
 WSS_INSTANCE_ZONE_KEY = 'zone'
 WSS_INSTANCES = [{
-    WSS_INSTANCE_HOST_KEY: 'localhost:8080'
+    WSS_INSTANCE_HOST_KEY: 'rtc.intopi.com:3478'
     WSS_INSTANCE_NAME_KEY: 'wsserver-std',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-a'
 }
@@ -61,7 +61,7 @@ WSS_INSTANCES = [{
 # WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
 
 # # memcache key for the active collider host.
-WSS_HOST_ACTIVE_HOST_KEY = 'localhost:3478'
+WSS_HOST_ACTIVE_HOST_KEY = 'rtc.intopi.com:3478'
 
 # Dictionary keys in the collider probing result.
 WSS_HOST_IS_UP_KEY = 'is_up'
