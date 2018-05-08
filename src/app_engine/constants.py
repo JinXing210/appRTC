@@ -47,12 +47,12 @@ WSS_INSTANCE_HOST_KEY = 'rtc.intopi.com:8089'
 WSS_INSTANCE_NAME_KEY = 'vm_name'
 WSS_INSTANCE_ZONE_KEY = 'zone'
 WSS_INSTANCES = [{
-    WSS_INSTANCE_HOST_KEY: 'rtc.intopi.com:8089'
+    WSS_INSTANCE_HOST_KEY: 'rtc.intopi.com:8089',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-a'
 }
 , {
-    WSS_INSTANCE_HOST_KEY: 'localhost:8080,
+    WSS_INSTANCE_HOST_KEY: 'localhost:8080',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std-2',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-f'
 }
