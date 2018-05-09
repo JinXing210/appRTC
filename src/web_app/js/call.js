@@ -302,6 +302,7 @@ Call.prototype.connectToRoom_ = function(roomId) {
         this.params_.clientId = roomParams.client_id;
         this.params_.roomId = roomParams.room_id;
         this.params_.roomLink = roomParams.room_link;
+        console.log( roomParams.room_link )
         this.params_.isInitiator = roomParams.is_initiator === 'true';
 
         this.params_.messages = roomParams.messages;
