@@ -43,15 +43,15 @@ ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
 ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
 
 # Dictionary keys in the collider instance info constant.
-WSS_INSTANCE_HOST_KEY = '69.79.26.13:8089'
+WSS_INSTANCE_HOST_KEY = 'rtc.intopi.com:8089'
 WSS_INSTANCE_NAME_KEY = 'vm_name'
 WSS_INSTANCE_ZONE_KEY = 'zone'
 WSS_INSTANCES = [{
-    WSS_INSTANCE_HOST_KEY: '69.79.26.13:8089',
+    WSS_INSTANCE_HOST_KEY: 'rtc.intopi.com:8089',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-a'
 }, {
-    WSS_INSTANCE_HOST_KEY: '69.79.26.13:8089',
+    WSS_INSTANCE_HOST_KEY: 'rtc.intopi.com:8089',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std-2',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-f'
 }]
