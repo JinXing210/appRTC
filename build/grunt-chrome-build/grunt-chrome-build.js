@@ -2,6 +2,7 @@
 
 module.exports = function (grunt) {
 
+  
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-jinja-new-grunt');
 
