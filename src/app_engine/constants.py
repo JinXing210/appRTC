@@ -37,7 +37,7 @@ ICE_SERVER_OVERRIDE  = [
     ]
   }
 ]
-
+# TURN_BASE_URL = 'http://rtc.intopi.com'
 ICE_SERVER_BASE_URL = 'http://rtc.intopi.com'
 ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
 ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
