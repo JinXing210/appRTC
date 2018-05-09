@@ -141,6 +141,7 @@ def get_wss_parameters(request):
           'Invalid or no value returned from memcache, using fallback: '
           + json.dumps(wss_active_host))
       wss_host_port_pair = constants.WSS_HOST_PORT_PAIRS[0]
+      logging.warning(wss_host_port_pair)
 
   if wss_tls and wss_tls == 'false':
     wss_url = 'ws://' + wss_host_port_pair + '/ws'
