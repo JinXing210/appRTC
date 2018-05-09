@@ -59,7 +59,7 @@ WSS_INSTANCES = [{
 WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
 
 # memcache key for the active collider host.
-WSS_HOST_ACTIVE_HOST_KEY = 'wss_host_active_host'
+WSS_HOST_ACTIVE_HOST_KEY = 'rtc.intopi.com:8080'
 
 # Dictionary keys in the collider probing result.
 WSS_HOST_IS_UP_KEY = 'is_up'
