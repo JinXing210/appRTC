@@ -130,6 +130,9 @@ def get_wss_parameters(request):
     # Attempt to get a wss server from the status provided by prober,
     # if that fails, use fallback value.
     memcache_client = memcache.Client()
+    
+    logging.warning(constants.WSS_HOST_ACTIVE_HOST_KEY)
+
     wss_active_host = memcache_client.get(constants.WSS_HOST_ACTIVE_HOST_KEY)
     if wss_active_host in constants.WSS_HOST_PORT_PAIRS:
       wss_host_port_pair = wss_active_host
